@@ -1,0 +1,622 @@
+:root {
+    --primary: #d6dad6;
+    --primaryDark: #a0a7a1;
+    --secondary: #0c2e15;
+    --White: rgb(253, 242, 242);
+    --black: rgb(177, 177, 177);
+
+    --mainFont: 'Staatliches', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Globales                                  */
+/* -------------------------------------------------------------------------- */
+
+body {
+    background-color: var(--primary);
+    font-size: 1.6rem;
+    /* line-height: 1.5; */
+
+}
+
+p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(65, 64, 64);
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    p {
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(65, 64, 64);
+        font-weight: bold;
+    } 
+} 
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 20rem;
+    margin: 0 auto; /* centrar */
+    display: block;
+    text-align: center;
+    
+}
+
+h2, h3 {
+    text-align: center;
+    color: rgb(65, 64, 64);
+    font-family: var(--mainFont);
+    letter-spacing: .3rem;   
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding: .5rem;
+    letter-spacing: 3px;
+    color:rgb(65, 64, 64);
+    font-family:'Rubik', sans-serif;
+
+}
+
+h2 {font-size: 3.2rem;}
+h3 {font-size: 2.4rem;}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between; 
+        margin: 0 5rem;  
+    } 
+}
+
+.header__logo {
+    max-width: 15rem;
+    margin-left: .5rem .5rem
+    ;
+}
+
+@media (min-width: 768px) {
+    .header__logo {
+        display: flex;
+        padding-left: 1rem;
+        margin: 1rem 0;
+        max-width: 20rem;
+    } 
+}
+
+.icon {
+    max-width: 2rem;
+    max-height: 2rem; 
+    margin-top: 1rem; 
+}
+
+@media (min-width: 768px) {
+     .icon { 
+        max-width: 3rem;
+        max-height: 3rem; 
+        margin-top: 1rem; 
+     }
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;      
+}
+
+@media (min-width: 768px) {
+    .right {
+        display: flex;
+        justify-content: flex-end;
+    }    
+}
+
+
+
+h4 {
+    
+    font-size: .8rem;
+    margin: 1.5rem .5rem;
+    font-family:'Rubik', sans-serif;
+    text-transform: uppercase;
+    color: var(--White);
+    text-shadow: var(--secondary) .2rem .2rem 1rem;
+    padding-bottom: 1.3rem;
+}
+
+@media (min-width: 768px) {
+    h4 {
+        position: relative;
+        float: right;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Navegation                                 */
+/* -------------------------------------------------------------------------- */
+
+.margen {
+    background-color: #5f7d95;
+    height: .5rem;
+}
+
+.nav {
+    background-color: var(--black);
+    position: relative;
+}
+
+
+.return {
+    width: 2rem;
+    margin: .5rem 10rem;
+    position: absolute;
+}
+
+@media (min-width: 390px) {
+    .return {
+    width: 2rem;
+    margin: .5rem 11rem;
+    position: absolute;
+    }
+}
+
+@media (min-width: 540px) {
+    .return {
+    width: 2.5rem;
+    margin: .3rem 0 0 18rem;
+    position: absolute;
+    }
+}
+
+@media (min-width: 768px) {
+    .return {
+        width: 2.5rem;
+        margin-left: 30rem;
+        position: absolute;
+    }    
+}
+
+@media (min-width: 940px) {
+    .return {
+    width: 2.5rem;
+    margin-left: 35rem;
+    position: absolute;
+    }
+}
+
+@media (min-width: 1200px) {
+    .return {
+    width: 2.5rem;
+    margin-left: 55rem;
+    position: absolute;
+    }
+}
+
+.margen-claro {
+    background-color: var(--primary);
+    height: 1rem;
+}
+
+@media (max-width: 500px) {
+    .guarni {margin-left: 7rem;}
+}
+@media (min-width: 500px) {
+    .guarni {margin-left: 15rem;}
+}
+@media (min-width: 768px) {
+    .guarni {margin-left: 27rem;}
+}
+@media (min-width: 1200px) {
+    .guarni {margin-left: 52rem;}
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  Body                                  */
+/* -------------------------------------------------------------------------- */
+
+.back {
+        padding: 1rem; 
+        color: rgb(65, 64, 64);
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        background-image: url(../img/nosotros4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;       
+}
+
+
+button {
+    
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(177, 177, 177);
+    border: none;
+    color: rgb(255, 254, 254);
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .07em;
+    font-weight: bold;
+    margin: 4px auto;
+    transition: 0.3s;
+    box-shadow:var(--secondary);
+    border-radius: 5px;
+}
+
+.effect:hover {
+    background-color: var(--White);
+    color:var(--black);  
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  Productos                                  */
+/* -------------------------------------------------------------------------- */
+
+.we {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.wrap {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+    max-width: 30rem;
+}
+
+@media (min-width: 390px) {
+    .wrap {
+        margin-left: 5rem;
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrap {margin-left: 5rem;}
+}
+
+.we__image,
+.we__image2 { 
+    max-width: 100%;
+    max-height: 50%;  
+}
+
+.we__image2 { 
+    margin-top: 2rem;
+    
+}
+
+.pasta {
+    width: 50%;
+    height: 50%;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+     .pasta {
+        width: 20%;
+    height: 20%;
+    margin: 1rem; 
+     }
+}
+
+@media (min-width: 390px) {
+    .we__image,
+    .we__image2 {
+        max-width: 80%;
+        max-height: 50%;
+    }
+}
+@media (min-width: 390px) {
+    .we__image2 { 
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 540px) {
+    .we__image,
+    .we__image2 {
+    max-width: 80%;
+       max-height: 50%;
+    }
+}
+@media (min-width: 540px) {
+    .we__image2 { 
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+     .we__image,
+     .we__image2 {
+        max-width: 65%;
+        max-height: 50%;
+     }
+}
+
+.fritas {
+    width: 50%;
+    height: 50%;
+    margin: 1rem;
+}
+
+p {
+    text-align: left;
+    margin: 2rem;
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    p {
+        text-align: left;
+        margin: 2rem;
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+}
+
+span {
+    text-align:right;
+    margin-left: 5rem;
+}
+.esp p {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    background-color: #5f7d9565;
+    padding: 1rem; 
+}
+
+@media (max-width: 500px) {
+    .vegana {margin-top: 3rem;}
+    .mila {margin-top: 2.1rem;}
+    .napo {margin-top: 3.1rem;}
+    .morada {margin-top: 4.3rem;}
+    .supre {margin-top: 2rem;}
+    .snapo {margin-top: 3rem;}
+    .bife {margin-top: 3rem;}
+}
+
+@media (min-width: 768px) {
+    .price, 
+    .vegana,
+    .mila,
+    .napo,
+    .morada,
+    .supre,
+    .snapo,
+    .bife p {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .nombres p {
+        display: flex;
+        justify-content: left;
+        margin-left: 0;
+    }  
+}
+
+.price_pastas {
+    margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+    .price_pastas {
+        margin-top: 1rem;
+    }
+}
+
+.nombres_pastas,
+.nombres_minu {
+    margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+    .price_minu {margin-top: 2.5rem;}
+    .lc {margin-top: 6rem;}
+    .lv {margin-top: 6rem;}
+    .lm {margin-top: 8rem;}
+    .hs {margin-top: 8rem;}
+    .hc {margin-top: 7rem;}
+    .hm {margin-top: 11rem;}  
+}
+
+@media (min-width: 500px) {
+    .price_minu {margin-top: 2rem;}
+    .lc {margin-top: 4rem;}
+    .lv {margin-top: 4rem;}
+    .lm {margin-top: 5rem;}
+    .hs {margin-top: 5rem;}
+    .hc {margin-top: 4rem;}
+    .hm {margin-top: 6rem;}  
+}
+
+
+@media (min-width: 768px) {
+     .price_minu,
+     .ls {margin-top: 1rem;}
+     .lc {margin-top: 6rem;}
+     .lv {margin-top: 5.5rem;}
+     .lm {margin-top: 7rem;}
+     .hs {margin-top: 4rem;}
+     .hc {margin-top: 5rem;}
+     .hm {margin-top:7rem;}
+}
+@media (min-width: 1200px) {
+    .price_minu,
+    .ls {margin-top: .5rem;}
+    .lc {margin-top: 0;}
+    .lv {margin-top: 2.3rem;}
+    .lm {margin-top: 3.5rem;}
+    .hs {margin-top: 2rem;}
+    .hc {margin-top: 2rem;}
+    .hm {margin-top: 5rem;}
+}
+
+.nombres_fritas {
+    margin-top: 1rem;;
+}
+
+
+@media (max-width: 500px) {
+    .pf {margin-top: 2rem;}
+    .fc {margin-top: 4rem;}
+    .fv {margin-top: 6rem;}
+    .fb {margin-top: 6rem;}
+    .em {margin-top: 3rem;}
+    .ec {margin-top: 7rem;}  
+}
+
+@media (min-height: 800px) {
+    .pf {margin-top: 2rem;}
+    .fc {margin-top: 4rem;}
+    .fv {margin-top: 4rem;}
+    .fb {margin-top: 4rem;}
+    .em {margin-top: 3rem;}
+    .ec {margin-top: 7rem;}  
+}
+@media (min-width: 500px) {
+    .pf {margin-top: 1rem;}
+    .fc {margin-top: 2rem;}
+    .fv {margin-top: 2rem;}
+    .fb {margin-top: 2rem;}
+    .em {margin-top: 2rem;}
+    .ec {margin-top: 3rem;}  
+}
+
+
+@media (min-width: 768px) {
+    .pf {margin-top: 1rem;}
+    .fc {margin-top: 2rem;}
+    .fv {margin-top: 2rem;}
+    .fb {margin-top: 2rem;}
+    .em {margin-top: 2rem;}
+    .ec {margin-top: 3rem;}  
+}
+@media (min-width: 1200px) {
+    .pf {margin-top: 1rem;}
+    .fc {margin-top: 2rem;}
+    .fv {margin-top: 2rem;}
+    .fb {margin-top: 2rem;}
+    .em {margin-top: 2rem;}
+    .ec {margin-top: 2rem;}  
+}
+
+.pizza,
+.pizza_price {margin-top: 1rem;}
+
+@media (max-width: 530px) {
+     .ef {margin-top: 1.5rem;}
+     .bp {margin-top: 3rem;}
+     .flan {margin-top: 2.8rem;}
+     .lp {margin-top: 2rem;}
+     .tortas {margin-top: 2rem;}
+}
+
+@media (max-width: 500px) {
+     .sabor {margin-top: 3.3rem;}
+}
+
+@media (min-width: 530px) {
+    .ef {margin-top: 1rem;}
+    .bp {margin-top: 1.5rem;}
+    .flan {margin-top: .5rem;}
+    .lp {margin-top: .5rem;}
+    .tortas {margin-top: .5rem;}
+}
+
+@media (max-width: 500px) {
+    .rabas {margin-top: 3.3rem;}
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Blocks                                   */
+/* -------------------------------------------------------------------------- */
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .blocks {
+       grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.block {
+    text-align: center;
+}
+
+.title__block {
+    margin: 0;
+}
+
+.block__img {
+    width: 50%;
+}
+
+.buy__title {
+    margin-top: 5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+.footer {
+    background-color: var(--primaryDark);
+    
+}
+
+.footer__texto {
+    font-family:var(--mainFont);
+    text-align: center;
+    font-size: .8rem;
+    color:var(--White);
+    letter-spacing: .10rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem;
+}
