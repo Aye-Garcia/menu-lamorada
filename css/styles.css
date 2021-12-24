@@ -304,6 +304,12 @@ p {
     padding: 1rem; 
 }
 
+.pejerrey p {
+    background-color: var(--primary);
+    font-size: 14px;
+    color: #5f7d95;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
